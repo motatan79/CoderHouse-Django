@@ -13,7 +13,7 @@ def nombre(request, nombre):
 
 def fecha_hora(request):
     from datetime import datetime
-    ahora = datetime.now().strftime(r'"%d/%m/%Y %H:%M:%S.%f')
+    ahora = datetime.now()
     return HttpResponse(ahora)
 
 def tirar_dados(request):
